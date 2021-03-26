@@ -25,8 +25,8 @@ export default class Box extends React.PureComponent {
     }
 
     showCard (id) {
-        console.log(id)
-       
+        this.props.id(id);    
+      
       }; 
     
     render() {
@@ -39,7 +39,7 @@ export default class Box extends React.PureComponent {
                 {
                     this.state.data.map((hero, index) => {
                         return <div class="box" key={hero.id}
-                        onClick={ () => this.showCard(hero.id)}>
+                        onClick={ () => this.showCard(hero)}>
                             <div className="box-img" > 
                                 <img src={`${hero.thumbnail.path}.${hero.thumbnail.extension}`} />
                             </div>
