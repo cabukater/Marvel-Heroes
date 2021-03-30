@@ -16,7 +16,7 @@ export default class App extends Component {
   showCard = (HeroValue) => {
     this.setState({ hero: HeroValue });
 
-    console.log(HeroValue.name)
+    console.log(HeroValue)
   }
 
   render() {
@@ -26,8 +26,9 @@ export default class App extends Component {
         <div className="App">
           <div className="stage">
             <Hero title={this.state.hero.name} 
-             />
-          </div>
+             dsc={this.state.hero.description}
+             image={this.state.hero} />
+            </div>
           <div className="list-cards">
             <Box id={this.showCard} />
           </div>
