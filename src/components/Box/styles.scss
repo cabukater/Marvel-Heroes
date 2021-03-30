@@ -11,15 +11,13 @@
     color: white;
     z-index: 1;
     transition: all 0.3s;
-    margin: 2px;
-  
+   
   }
   .box:hover {
-    transition: transform .3s;
-    -ms-transform: scale(1.4);
-    -webkit-transform: scale(1.4);  
-    transform: scale(1.4);
-    z-index: 2;
+    .box-img{
+      border: 3px solid rgb(255, 251, 0);
+    }
+  
   }
 .box-img{
   width:60px;
@@ -27,9 +25,12 @@
 
   overflow: hidden;
   margin: 0;
-  margin-bottom: 5px;
-}
+  border: 3px solid red;
+  border-radius: 100%;
+ 
   img{
     width: 100%;
     border-radius:100%;
   }
+  
+}

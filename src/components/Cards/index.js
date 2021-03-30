@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import md5 from 'js-md5'
-import './styles.css'
+import './styles.scss'
 
 export default class Card extends React.PureComponent  {
 
@@ -14,7 +14,7 @@ export default class Card extends React.PureComponent  {
 
     async componentDidMount() {
         const PUBLIC_KEY = '794421a97f19aa33c8b961b598009f98';
-const PRIVATE_KEY = '1553c81b295fe0e47f9cfa1b284f43080bac185e';
+        const PRIVATE_KEY = '1553c81b295fe0e47f9cfa1b284f43080bac185e';
         const timestamp = Number(new Date())
         const hash = md5.create()
         hash.update(timestamp + PRIVATE_KEY + PUBLIC_KEY)
@@ -27,7 +27,7 @@ const PRIVATE_KEY = '1553c81b295fe0e47f9cfa1b284f43080bac185e';
         return (
             <div className="container">
                 { this.state.data.map((hero, index) => {
-                            return  <div className="size-card flip-card flip-card-hover et_pb_animation_fade_in et-animated">
+                            return  <div className="size-card flip-card flip-card-hover et_pb_animation_fade_in et-animated" key={}>
    <div class="size-card flip-card flip-card-hover et_pb_animation_fade_in et-animated">
         <div class="supertrunfo">
             

@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import './App.css';
+import './App.scss';
 import Box from './components/Box'
 import Hero from './components/Hero'
 /**
@@ -21,8 +21,7 @@ export default class App extends Component {
 
   render() {
     return (
-
-      <>
+     <>
         <div className="App">
           <div className="stage">
             <Hero title={this.state.hero.name} 
