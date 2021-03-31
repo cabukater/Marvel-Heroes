@@ -1,4 +1,4 @@
-.container {
+.infinite-scroll-component{
   display: grid;
   grid-gap: 5px;
   grid-template-columns: repeat(4, minmax(25%, 1fr));
@@ -32,5 +32,15 @@
     width: 100%;
     border-radius:100%;
   }
+  
+}
+
+.title{
+  font-size: 20px;
+    font-family: 'Bebas Neue', cursive;
+    margin-left: 15px;
+    color: #fff;
+    text-align: left;
+    margin-top: 29px;
   
 }

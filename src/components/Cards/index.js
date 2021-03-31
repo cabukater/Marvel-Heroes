@@ -28,70 +28,70 @@ export default class Card extends React.PureComponent  {
             <div className="container">
                 { this.state.data.map((hero, index) => {
                             return  <div className="size-card flip-card flip-card-hover et_pb_animation_fade_in et-animated" key={}>
-   <div class="size-card flip-card flip-card-hover et_pb_animation_fade_in et-animated">
-        <div class="supertrunfo">
+   <div className="size-card flip-card flip-card-hover et_pb_animation_fade_in et-animated">
+        <div className="supertrunfo">
             
-            <div class="supertrunfo-back supertrunfo-face">
+            <div className="supertrunfo-back supertrunfo-face">
               
                     <button>Selecione Essa Carta</button>
             </div>
-          <div class="supertrunfo-front supertrunfo-face">
+          <div className="supertrunfo-front supertrunfo-face">
                 
-                <div class="profile-box">
+                <div className="profile-box">
                     <h4>Moisés Lope Ferreira</h4>
                  <div >
-                    <img class="photo" src="https://www.lojadaspalavras.com.br/wp-content/uploads/2017/01/AAEAAQAAAAAAAAdkAAAAJDhmMzdlMDJmLTQwZGEtNDNhNS04MGE1LTlhMzFhNjZhMTI3NQ.jpg" /></div></div><div class="skill-box">
-                    <div class="skill">
-                        <div class="skill-name">Criatividade:</div>
-                        <div class="skill-star">
+                    <img className="photo" src="https://www.lojadaspalavras.com.br/wp-content/uploads/2017/01/AAEAAQAAAAAAAAdkAAAAJDhmMzdlMDJmLTQwZGEtNDNhNS04MGE1LTlhMzFhNjZhMTI3NQ.jpg" /></div></div><div className="skill-box">
+                    <div className="skill">
+                        <div className="skill-name">Criatividade:</div>
+                        <div className="skill-star">
                             
         </div>
-                        <div class="skill-star">
+                        <div className="skill-star">
                            
         </div>
-                        <div class="skill-star">
+                        <div className="skill-star">
                           
         </div>
-                        <div class="skill-star">
+                        <div className="skill-star">
                             
         </div>
-                        <div class="skill-star">
+                        <div className="skill-star">
                            
         </div>
                     </div>
-                    <div class="skill">
-                        <div class="skill-name">Energia:</div>
-                        <div class="skill-star">
+                    <div className="skill">
+                        <div className="skill-name">Energia:</div>
+                        <div className="skill-star">
                            
         </div>
-                        <div class="skill-star">
+                        <div className="skill-star">
                            
         </div>
-                        <div class="skill-star">
+                        <div className="skill-star">
                           
         </div>
-                        <div class="skill-star">
+                        <div className="skill-star">
                           
         </div>
-                        <div class="skill-star">
+                        <div className="skill-star">
                             
         </div>
                     </div>
-                     <div class="skill">
-                        <div class="skill-name">Nerdice:</div>
-                        <div class="skill-star">
+                     <div className="skill">
+                        <div className="skill-name">Nerdice:</div>
+                        <div className="skill-star">
                            
         </div>
-                        <div class="skill-star">
+                        <div className="skill-star">
                            
         </div>
-                        <div class="skill-star">
+                        <div className="skill-star">
                           
         </div>
-                        <div class="skill-star">
+                        <div className="skill-star">
                             
         </div>
-                        <div class="skill-star">
+                        <div className="skill-star">
 
         </div>
                     </div>

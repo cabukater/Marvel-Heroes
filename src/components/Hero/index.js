@@ -7,11 +7,11 @@ export default class Hero extends Component {
      console.log(this.props)   
         return (
       
-<div class="card" style={{backgroundImage: `url(${this.props.image.thumbnail?.path}.${this.props.image.thumbnail?.extension})`}} >
-  <div class="card__inner">
-  <header class="card__header">
-      <nav class="card__nav">
-        <ul class="list list--nav">
+<div className="card" style={{backgroundImage: `url(${this.props.image.thumbnail?.path}.${this.props.image.thumbnail?.extension})`}} >
+  <div className="card__inner">
+  <header className="card__header">
+      <nav className="card__nav">
+        <ul className="list list--nav">
           <li><a href="#">Filmes</a></li>
           <li><a href="#">Histórias</a></li>
           <li><a href="#">Cards <small>Soon</small></a></li>
@@ -19,18 +19,18 @@ export default class Hero extends Component {
       </nav>
     </header>
     
-    <main class="card__body">
+    <main className="card__body">
       
-      <div class="card__info">
-        <h1 class="card__title">{this.props.title}</h1>
+      <div className="card__info">
+        <h1 className="card__title">{this.props.title}</h1>
     
-        <p class="card__slug">.{this.props.dsc}</p>
+        <p className="card__slug">.{this.props.dsc}</p>
       
       </div>
     </main>
     
-    <footer class="card__footer">
-    <button class="card__btn" value="Watch trailer">CONHEÇA MAIS S ESSE HERÓI</button>
+    <footer className="card__footer">
+    <button className="card__btn" value="Watch trailer">CONHEÇA MAIS S ESSE HERÓI</button>
     </footer>
   </div>
 </div>
