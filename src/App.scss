@@ -47,3 +47,38 @@ html, body {
     transform: rotate(360deg);
   }
 }
+oo
+
+
+
+function transformContentHtml(contentHtml: string): string {
+  const parser = new DOMParser();
+  const doc = parser.parseFromString(contentHtml, 'text/html');
+
+  // Encontra todos os elementos <p>
+  const paragraphs = doc.getElementsByTagName('p');
+
+  // Verifica se há algum elemento <a> no documento
+  const linkExists = doc.querySelector('a') !== null;
+  if (!linkExists) {
+    return doc.body.innerHTML;
+  }
+
+  for (let i = 0; i < paragraphs.length; i++) {
+    const paragraph = paragraphs[i];
+    const span = doc.createElement('span');
+    span.textContent = paragraph.textContent;
+    const link = paragraph.querySelector('a');
+    if (link !== null) {
+      const newLink = doc.createElement('a');
+      newLink.setAttribute('href', link.getAttribute('href'));
+      newLink.textContent = link.textContent;
+      link.parentNode.replaceChild(newLink, link);
+      span.parentNode.insertBefore(link, span.nextSibling);
+      span.parentNode.insertBefore(doc.createTextNode(' '), span.nextSibling);
+    }
+    paragraph.parentNode.replaceChild(span, paragraph);
+  }
+
+  return doc.body.innerHTML;
+}
